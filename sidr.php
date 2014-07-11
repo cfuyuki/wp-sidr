@@ -17,14 +17,14 @@ function sidr_scripts_styles(){
 	/*
 	 * Adds JavaScript for handling the navigation menu hide-and-show behavior.
 	 */
-	wp_enqueue_script( 'sidr' , plugins_url() . '/sidr/js/jquery.sidr.min.js', array('jquery'), null, false );
-	wp_enqueue_script( 'sidrinit' , plugins_url() . '/sidr/js/sidr-init.js', array('sidr'), null, true );
+	wp_enqueue_script( 'sidr' , plugins_url('js/jquery.sidr.min.js', __FILE__ ), array('jquery'), null, false );
+	wp_enqueue_script( 'sidrinit' , plugins_url('js/sidr-init.js', __FILE__ ), array('sidr'), null, true );
 
 
 	/*
 	 * Loads stylesheet.
 	 */
-	wp_enqueue_style( 'sidr-style', plugins_url() . '/sidr/stylesheets/jquery.sidr.dark.css');
+	wp_enqueue_style( 'sidr-style', plugins_url('stylesheets/jquery.sidr.dark.css', __FILE__ ) );
 
 }
 
